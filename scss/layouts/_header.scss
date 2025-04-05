@@ -32,11 +32,15 @@ color: #fff;
 }
 
 .header-list {
+  display: none;
+  @media (min-width:768px){
     display: flex;
     align-items: center;
     justify-content: center;
     gap:5px;
 }
+  }
+    
 .header-link {
     font-family: "montserrat", sans-serif;
     font-weight: 700;
@@ -48,4 +52,19 @@ color: #fff;
 }
 .header-link:hover{
     border: 2px solid #fff ;
+}
+.mob-open{
+   @media (min-width:768px){
+    display: none;
+}
+}
+/*моб меню*/
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: darkred;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -39,6 +40,10 @@ body {
     width: 1200px;
     padding: 0 20px;
   }
+}
+
+.is-hidden {
+  display: none;
 }
 
 .hero {
@@ -145,10 +150,15 @@ body {
 }
 
 .header-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
 }
 
 .header-link {
@@ -163,6 +173,23 @@ body {
 
 .header-link:hover {
   border: 2px solid #fff;
+}
+
+@media (min-width: 768px) {
+  .mob-open {
+    display: none;
+  }
+}
+
+/*моб меню*/
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: darkred;
 }
 
 .team {
