@@ -2,6 +2,11 @@
   padding-top: 214px;
   padding-bottom: 138px;
   background-image: url(../../images/bgvector.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/deskone@2x.png);
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,11 +17,21 @@
     padding-top: 201px;
     padding-bottom: 233px;
     background-image: url(../../images/tabletheader.png);
+      @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/deskone@2x.png);
+  }
   }
   @media (min-width: 1200px) {
     padding-top: 201px;
     padding-bottom: 246px;
     background-image: url(../../images/deckheader.png);
+      @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/deskone@2x.png);
+  }
   }
 }
 

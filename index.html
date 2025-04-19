@@ -50,10 +50,15 @@
         <li class="team-item">
           <picture>
             <source
-              srcset="./images/desk-11.png 1x, ./images/deskone@2x.png 2x"
+              srcset="./images/desk-11.png 1x, ./images/deskone@2x.png 2x"  media="min-width:1200px"
               type="image/png"
             />
-            <img class="team-photo" src="./images/desk-11.png" alt="" />
+            <source
+              srcset="./images/desk-11.png 1x, ./images/deskone@2x.png 2x" media="min-width:767px"
+              type="image/png"
+            />
+            
+            <img class="team-photo" src="./images/desk-11.png" alt=""  media="max-width:767px"/>
           </picture>
 
           <h3 class="team-name">Bradley Hunter</h3>
@@ -65,9 +70,8 @@
         <li class="team-item">
           <picure>
             <source
-              srcset="./images/mob-21.png 1x, ./images/desktwo@2x.png 2x"
-              type="image/png"
-            />
+              srcset="./images/mob-21.png 1x, ./images/desktwo@2x.png 2x" media="min-width:1200px"
+              type="image/png" />
             <img class="team-photo" src="./images/desk-21.png" alt="" />
           </picure>
 
@@ -80,7 +84,7 @@
         <li class="team-item">
           <picture>
             <source
-              srcset="./images/mob-21.png 1x, ./images/deskthree@2x.png 2x"
+              srcset="./images/mob-21.png 1x, ./images/deskthree@2x.png 2x"  media="min-width:1200px"
               type="image/png"
             />
             <img class="team-photo" src="./images/mob-2 1.png" alt="" />
@@ -95,7 +99,7 @@
         <li class="team-item">
           <picture>
             <source
-              srcset="./images/desk-41.png 1x, ./images/deskfour@2x.png 2x"
+              srcset="./images/desk-41.png 1x, ./images/deskfour@2x.png 2x"  media="min-width:1200px"
               type="image/png"
             />
             <img class="team-photo" src="./images/desk-4 1.png" alt="" />
